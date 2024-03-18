@@ -12,11 +12,12 @@ Bruno Garcia de Oliveira Breda - 11212702
 // Estrutura de dados para representar um grafo
 typedef struct {
     int vertices;       // Número de vértices no grafo
-    int edges;          // Número de arestas no grafo
-    int **adj_matrix;   // Matriz de adjacência para representar as conexões entre vértices
+    int edges;          // Contar número de arestas no grafo. Quando conto aumento 1 a contagem
+    int **adj_matrix;   // Matriz de adjacência para representar as conexões entre vértice. Ponteiro para uma matriz
 } Graph;
 
 // Função para inicializar um grafo com o número especificado de vértices
+// Cria uma matriz QUADRADA
 Graph* initGraph(int vertices) {
     // Aloca memória para a estrutura do grafo
     Graph* graph = (Graph*)malloc(sizeof(Graph));
